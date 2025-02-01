@@ -29,6 +29,7 @@ Fonts are separated by a & */
 
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
+#content{max-width:1600px;margin: 0 auto;}
 
 body {
   max-width: 960px;
