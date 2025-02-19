@@ -1,0 +1,45 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 20px;
+            width: 80%;
+            max-width: 900px;
+        }
+        .image {
+            text-align: center;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .text {
+            background-color: #b3b3b3;
+            padding: 20px;
+            text-align: center;
+        }
+        .text h1 {
+            font-size: 48px;
+            margin: 0;
+            font-weight: bold;
+        }
+        .text h1 span {
+            color: black;
+        }
+        .text p {
+            font-size: 24px;
+            color: darkred;
+            font-weight: bold;
+            margin-top: 10px;
+        }
