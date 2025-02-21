@@ -179,3 +179,24 @@ footer .social img {
 main section img {
     box-sizing: border-box;
 }
+
+/* Hover Effect */
+.rivers-card:hover, .camping-card:hover, .rapids-card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+    main {
+        padding: 10px;
+    }
+    .home-grid {
+        display: block;
+        text-align: center;
+    }
+}
