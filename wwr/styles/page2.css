@@ -1,0 +1,152 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Rock+Salt&display=swap');
+
+/* Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 22px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Content Container */
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #004466, #0077b6);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+header nav {
+    display: flex;
+    gap: 20px;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+}
+header nav a:hover {
+    background: white;
+    color: #0077b6;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Section */
+#hero {
+    background: url('../images/hero-bg.jpg') center/cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+.hero-title {
+    font-size: 48px;
+    font-family: 'Rock Salt', cursive;
+}
+.hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.cta-button {
+    background: #0077b6;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.cta-button:hover {
+    background: white;
+    color: #0077b6;
+    border: 2px solid #0077b6;
+}
+
+/* Gear Grid */
+.gear-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    text-align: center;
+}
+.gear-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+.gear-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+.gear-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #004466, #0077b6);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 0 0 10px 10px;
+    font-size: 1.2em;
+}
+footer a {
+    color: #a4c639;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .gear-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 20px;
+    }
+    .cta-button {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+    footer {
+        font-size: 1em;
+        padding: 20px;
+    }
+}
