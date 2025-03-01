@@ -164,3 +164,8 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+img[alt="home page wireframe"] {
+  width: 80%; /* Adjust as needed */
+  max-width: 800px; /* Ensures it doesn't get too big */
+  height: auto; /* Maintains aspect ratio */
+}
