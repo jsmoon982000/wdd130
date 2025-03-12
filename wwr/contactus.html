@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/page2.css">
+    <title>Contact Us | Rich Rafters</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.png" alt="Rich Rafters Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="page2.html">Rafting Gear</a>
+                <a href="site-plan-rafting.html">Site Plan</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+        </header>
+        
+        <div id="hero">
+            <h1 class="hero-title">Contact Us</h1>
+            <p class="hero-subtitle">Have questions or need assistance? Reach out to us!</p>
+        </div>
+
+        <main class="contact-form">
+            
+            <div id="feedback"></div>
+
+            
+            <form action="submit_form.php" method="post">
+                <label for="user_name">Name:</label><br>
+                <input type="text" id="user_name" name="user_name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+
+        <footer>
+            <p>Rich Rafters &copy; 2025 - Jinseong Moon</p>
+            <p><a href="site-plan-rafting.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    
+    <script>
+        const feedbackElement = document.getElementById('feedback');
+        const formElement = document.forms[0];
+
+        formElement.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent form from submitting normally
+            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back to you as soon as possible!';
+            feedbackElement.style.display = "block"; // Show feedback message
+            document.body.classList.toggle('moveDown'); // Move page content down to avoid overlap
+        });
+    </script>
+</body>
+</html>

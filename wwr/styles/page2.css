@@ -162,3 +162,66 @@ footer .social-icons a {
         grid-template-columns: 1fr;
     }
 }
+/* Feedback Message */
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    display: none; 
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.moveDown {
+    margin-top: 3em;
+}
+
+
+.contact-form form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-form form label {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    color: #333;
+}
+
+.contact-form form input[type="submit"] {
+    background-color: #48cae4;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.contact-form form input[type="submit"]:hover {
+    background-color: white;
+    color: #48cae4;
+    border: 2px solid #48cae4;
+}
