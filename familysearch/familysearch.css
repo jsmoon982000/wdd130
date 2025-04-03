@@ -1,0 +1,121 @@
+/* Fancier, polished styling for the Moon Family Archive */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #f4f7fa, #dbe8ef);
+  margin: 0;
+  padding: 3rem 1rem;
+  color: #2c3e50;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #1a1a1a;
+  margin-bottom: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #2c3e50;
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 3rem;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  border-left: 6px solid #4e7bb4;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  margin: 0 0 1rem;
+  font-size: 2.2rem;
+  color: #2c3e50;
+  font-family: 'Playfair Display', serif;
+  border-bottom: 2px solid #e2e2e2;
+  padding-bottom: 0.5rem;
+}
+
+.card p {
+  margin: 0.5rem 0;
+  color: #444;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.card p strong {
+  color: #222;
+  font-weight: 600;
+}
+
+.card img {
+  width: 100%;
+  max-width: 550px;
+  margin: 1.5rem 0;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.02);
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    padding: 2rem;
+  }
+  .card h2 {
+    font-size: 1.6rem;
+  }
+  .card p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+  .card h2 {
+    font-size: 1.4rem;
+  }
+  .card p {
+    font-size: 0.95rem;
+  }
+}
